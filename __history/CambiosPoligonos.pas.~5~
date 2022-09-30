@@ -1,0 +1,61 @@
+unit CambiosPoligonos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Image1: TImage;
+    Panel1: TPanel;
+    Button2: TButton;
+    procedure FormCreate(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Image1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  Coordenadas:array[1..50] of TPoint;
+  n:integer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+n:=0;
+end;
+
+
+procedure TForm1.Image1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+Coordenadas[n+1].X:=X;
+Coordenadas[n+1].Y:=Y;
+n:=n+1;
+end;
+
+
+procedure TForm1.Button2Click(Sender: TObject);
+var
+i:integer;
+begin
+for i := 1 to n-1 do
+  begin
+    Image1.Canvas.MoveTo(Coordenadas[i].X,Coordenadas[i].Y);
+    Image1.Canvas.LineTo(Coordenadas[i+1].X,Coordenadas[i+1].Y);
+  end;
+  Image1.Canvas.MoveTo(Coordenadas[n].X,Coordenadas[n].Y);
+  Image1.Canvas.LineTo(Coordenadas[1].X,Coordenadas[1].Y);
+end;
+
+end.

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/09/29 14:25:39.000.471,=C:\Users\Alumno\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/29 14:49:47.000.240,C:\Users\Alumno\Documents\Embarcadero\Studio\Projects\Unit1.dfm=E:\CambiosPoligonos\CambiosPoligonos.dfm</Transaction>
+    <Transaction>2022/09/29 14:49:47.000.240,C:\Users\Alumno\Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\CambiosPoligonos\CambiosPoligonos.pas</Transaction>
+    <Transaction>2022/09/29 14:57:56.000.456,C:\Users\Alumno\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\CambiosPoligonos\CambiosPoligonosCoor.dproj</Transaction>
+    <Transaction>2022/09/29 23:01:17.000.793,E:\CambiosPoligonos\CambiosPoligonos.pas=D:\Documentos\BUAP ESCUELA\SEMESTRE 4\Graficacion\Proyectos\EscaladoIsometricoPP\EscaladoIsometricoPP.pas</Transaction>
+    <Transaction>2022/09/29 23:01:17.000.793,E:\CambiosPoligonos\CambiosPoligonos.dfm=D:\Documentos\BUAP ESCUELA\SEMESTRE 4\Graficacion\Proyectos\EscaladoIsometricoPP\EscaladoIsometricoPP.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
